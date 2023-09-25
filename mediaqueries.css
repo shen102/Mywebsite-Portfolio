@@ -53,10 +53,21 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  .contact-info-upper-container{
+    flex-direction: column;
   }
+  .contact-info-container{
+    width: 100%;
+   
+    
+  }
+  .footer{
+    height: 120vh;
+
+  }
+    
+    }
+
 
   #profile {
     height: 83vh;
@@ -118,4 +129,4 @@
   .text-container {
     text-align: justify;
   }
-}
+
