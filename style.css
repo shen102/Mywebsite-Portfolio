@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(196, 209, 13);
   
 }
 
@@ -287,28 +288,36 @@ img{
   flex-direction: column;
 }
 
+
 .about-containers,
 .about-details-container {
   display: flex;
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 50%;
 }
 
 .details-container {
   padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
   flex: 1;
-  background: #ffffff;
+  background: white;
   border-radius: 2rem;
-  border: rgb(102, 6, 6) 0.2rem solid;
-  border-color: rgb(138, 23, 23);
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
   text-align: center;
+  margin-bottom: 2rem;
+  background-color: hsl(59, 55%, 81%);
+}
+.details-container:hover{
+  max-height: 50px;
 }
 
 .section-container {
   gap: 4rem;
-  height: 77%;
+  height: 75%;
 }
 
 .section__pic-container {
@@ -369,57 +378,125 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(131, 30, 30);
-  background: rgb(250, 250, 250);
+  border-color: black;
+  background: rgb(240, 185, 233);
 }
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .project-title {
   margin: 1rem;
-  color: rgb(0, 7, 8);
+  color: black;
 }
 
 .project-btn {
-  color: rgb(105, 88, 88);
-  border-color: rgb(189, 29, 29);
+  color: black;
+  border-color: black;
+}
+
+.project button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid ecadeedf;
+  color: ecadeedf;
+  font-weight: bold;
+}
+
+.project button:hover {
+  background: ecadeedf;
+}
+
+
+.container {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.container .row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .column {
+  width: 32%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .column img {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.container .column a:last-child {
+
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 99%;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ecadeedf;
+  text-align: center;
+  padding-top: 14vw;
+  color: black
+}
+
+.container .column:hover a:last-child {
+  height: 100%;
+  top: 0;
 }
 
 /* Contact Section */
 #contact {
   
   position: relative;
-  height: 120vh;
+  height: 100vh;
 }
 
 .contact-info-upper-container {
   
   display: flex;
-  justify-content: center;
   width: 100%;
   max-width: 1200px;
   align-items: center;
+  justify-content: center;
+  
   
 
+}
+.contact-info-upper-container,
+.contact-info-container {
+  display: flex;
 }
 
 .contact-info-container {
   position: relative;
-  padding: 0 20px;
+  padding: 1.5rem;
   margin: 0 10px;
-  width: calc(33% - 20px);
+  
   height: 200px;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
   border-radius: 2rem;
-  background:#fcd0e2;
- 
+  background:hsl(59, 55%, 81%);
+  padding: 1.5rem;  
   
 
 }

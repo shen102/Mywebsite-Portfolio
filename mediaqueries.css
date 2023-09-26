@@ -56,7 +56,7 @@
 
   #contact,
   footer {
-    height: 100vh;
+    height: 40vh;
   }
 
   #profile {
@@ -132,7 +132,6 @@
 }
 .contact-info-container{
   width: 100%;
-  max-width: 100%;
-  margin: 10px 0;
+  margin: 10px 5;
 }
 }
