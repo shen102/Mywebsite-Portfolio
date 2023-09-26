@@ -53,21 +53,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  .contact-info-upper-container{
-    flex-direction: column;
-  }
-  .contact-info-container{
-    width: 100%;
-   
-    
-  }
-  .footer{
-    height: 120vh;
 
+  #contact,
+  footer {
+    height: 100vh;
   }
-    
-    }
-
 
   #profile {
     height: 83vh;
@@ -86,11 +76,11 @@
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap;
+    flex-wrap:wrap  ;
   }
 
   .contact-info-container {
-    margin: 0;
+    margin: 3%;
   }
 
   .contact-info-container p,
@@ -103,7 +93,9 @@
   }
 
   .logo {
-    font-size: 1.5rem;
+    
+    margin-top: 5%;
+    margin-left: 8%;;
   }
 
   .nav-links {
@@ -129,4 +121,18 @@
   .text-container {
     text-align: justify;
   }
-
+}
+@media screen and (max-width: 800px){
+#contact,
+  footer {
+    height: 120vh;
+  }
+.contact-info-upper-container{
+  flex-direction: column;
+}
+.contact-info-container{
+  width: 100%;
+  max-width: 100%;
+  margin: 10px 0;
+}
+}
